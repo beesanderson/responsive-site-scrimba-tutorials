@@ -1,0 +1,99 @@
+html {
+    /* font-size: 62.5%;  */
+    /* 62.5% changes document default to 10px instead of 16px for easier "maths" in font-size calculations */
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+body {
+    margin: 0;
+    font-size: 1.125rem;
+    color: #707070;
+    /* font-size: 2rem; */
+    /* 2rem = 20px bc "default" is 10px so 2times size of 10=20 */
+}
+
+/* h1,
+h2 {
+    margin-top: 0;
+
+} */
+
+
+ /* Typology */
+
+ h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #252525;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-top: 0;
+}
+
+.font-accent {
+    color: #B7832F;
+}
+
+ /* for a challenge he had us do the span as a compound selector so: 
+ h1 span {
+     color: #B7832F;
+ }
+But I just don't want to lol 
+      */
+
+
+
+ /* Modifier Classes */
+
+ /* Darkened columns will be done by having a "main" class used to style all columns then the secondary class to style these two particular columns */
+
+.col-bg {
+    padding: .5em;
+    background: #312614;
+    color: #fff;
+}
+
+.col-1 {
+    width: 20%;
+}
+
+.col-2 {
+    width: 45%;
+}
+
+.col-3 {
+    width: 70%;
+}
+
+
+
+ /* Layout */
+
+ img {
+     max-width: 100%;
+ }
+
+.container {
+    width: 95%;
+    max-width: 980px;  
+    margin: 0 auto;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+
+
+
+
+ /* Buttons */
+
+ /* ((None for this project)) */
