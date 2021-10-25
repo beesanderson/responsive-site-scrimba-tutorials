@@ -70,7 +70,25 @@ But I just don't want to lol
     width: 70%;
 }
 
+@media (max-width: 600px) {
+    .columns {
+        flex-direction: column;
+    }
 
+    .col-1 {
+        width: 100%;
+    }
+    
+    .col-2 {
+        width: 100%;
+    }
+    
+    .col-3 {
+        width: 100%;
+    }
+}
+
+  
 
  /* Layout */
 
