@@ -1,7 +1,91 @@
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
 /*  Fonts
     -----
     font-family: 'Lora', serif;
     font-family: 'Ubuntu', sans-serif;
  */
 
- 
+ /* For tutorial he's going to show compound selectors but I'll probably do classes like: site-title for <h1>&&<p>, , sub-title for <p>, nav-list for <ul>, nav-list-item for <li>, nav-link for <a> */
+
+
+
+/*
+=================
+Typography
+================= 
+*/
+
+ h1 {
+    font-family: 'Lora', serif; 
+    font-weight: 400;
+    color: #142774;
+    font-size: 2rem;
+    margin-bottom: 0;
+ }
+
+ .subtitle {
+     font-weight: 700;
+     color: #1792d2;
+     font-size: .75rem;
+     margin: 0;
+     margin-bottom: 0;
+ }
+
+/* 
+=================
+Layout
+================= 
+*/
+
+header {
+    text-align: center;
+    background: #f8f8f8;
+    padding: 2em 0; 
+}
+
+
+/* navigation */
+
+ nav ul {
+    border: 1px solid magenta;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+} 
+/* don't put text-align in parent and it won't work because it will center it within it's parent. It will for header but home is centered but its center in its "home" box same with the others */
+
+
+nav li {
+    /* border: 2px dotted orange; */
+
+    margin: 0 1em;
+}
+
+nav a {
+    /* border: 3px solid green; */
+    font-size: 1rem;
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: .25em 0;
+    /* .25 o padding good for mobile bc it helps make it a bit bigger for thumbs */
+}
+
+nav a:hover, 
+nav a:focus {
+    color: #1792d2;
+}
+
+.current-page {
+    border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+    color: #707070;
+}
