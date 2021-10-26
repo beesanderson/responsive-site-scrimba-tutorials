@@ -102,16 +102,56 @@ nav a:focus {
 
 /* ---- Media Queries ---- */
 
-@media (max-width: 620px) {
+@media (max-width: 675px) {
+    .container-nav {
+        flex-direction: column;
+    }
+
+    header {
+        text-align: center;
+    }
+}
+
+@media (max-width: 675px) {
+    nav ul {
+        flex-direction: column;
+    }
+    /* not centered because of nav li margin */
+    nav li {
+        margin: .5em 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* my sad sorry attempt at this */
+/* @media (max-width: 620px) {
     .container {
         display: flex;
         width: 90%;
         margin: 0 auto;
     }
 
+    header {
+        text-align: center;
+    }
+
     .container-nav {
         display: flex;
-        align-items: flex-start;
-        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: column;
     }
-}
+
+    .nav a {
+        justify-content: space-evenly;
+    }
+} */
