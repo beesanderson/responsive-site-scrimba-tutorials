@@ -100,3 +100,18 @@ nav a:focus {
 }
 
 
+/* ---- Media Queries ---- */
+
+@media (max-width: 620px) {
+    .container {
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .container-nav {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+}
