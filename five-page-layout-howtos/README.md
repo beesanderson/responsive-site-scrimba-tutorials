@@ -119,3 +119,31 @@ A good standard size is:
 ```
 
 #### Use `min-height: ____;` more then regular height obviously 
+
+### :last-child Pseudo Class Usage
+Just like :hover or :focus its a pseudo class that allows you to target a specific element in this case the last child of the parent element. 
+```CSS
+.widget-recent-post:last-child {
+    border: 0;
+    margin: 0;
+}
+```
+I was trying to get around this by adding a separate modifier class to the last of the `.article-recent` class in the `<main>` section but now I'm realizing I can change this
+```HTML
+<div class="article-recent-secondary">
+    <img src="/five-page-layout-howtos/images/deco.jpg" alt="" class="article-image img-position">
+    <p class="article-info">July 3, 2019 | 3 comments</p>
+</div>
+</article>
+```
+Which I modified the crop of within the @media query with the CSS of: 
+```CSS
+.img-position {
+    object-position: left;
+}
+```
+To this: 
+```CSS
+
+```
+Okay wait never mind didn't work lol. Ignore me.
